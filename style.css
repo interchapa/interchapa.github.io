@@ -518,7 +518,7 @@ form{
 }
 .titulo-gremio i{
     margin-left: 2rem;
-    font-size: 4rem;
+    font-size: 2.5rem;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -587,6 +587,25 @@ footer p {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+.footer-content i{
+    color: #a7a7a7;
+    justify-content: center;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+}
+.footer-content ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #a7a7a7;
+    width: 100%;
 }
 .checkbtn {
     display: block;
