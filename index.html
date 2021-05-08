@@ -9,16 +9,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
     <title>Inter Chapa</title>
 </head>
 <body>
     <nav class="navmenu">
         <div class="logo"><img src="/imagens/logo.png"></div> 
-        <a class="text-menu" href="#">Home</a>
-        <a class="text-menu" href="#">Novidades</a>
-        <a class="text-menu" href="#">Projetos</a>
-        <a class="text-menu" href="#">Contato</a>
-        <a class="text-menu" href="#">Escola</a>
+       <li class="Home"><a class="text-menu" href="#">Home</a></li>
+       <li class="Novidades"><a class="text-menu" href="#">Novidades</a></li>
+       <li class="Projetos"><a class="text-menu" href="#Projetos">Projetos</a></li>
+       <li class="Contato"><a class="text-menu" href="#Contato">Contato</a></li>
+       <li class="Escola"><a class="text-menu" href="#Escola">Escola</a></li>
+       <a class="text-menu" href="#Contato"><button class="btn btn-menu">Contato</button></a>
         </div>
     </nav>
     
@@ -32,6 +35,134 @@
         </div>
     </header>
 
-    <section></section>
+    <section class="gremio">
+        <div class="sessao-header">
+            <h1>Grêmio</h1>
+    </div>
+           <div class="header-gremio">
+                 <div class="img-gremio"> 
+                   <img src="/imagens/logo.png" alt="" class="">
+                 </div>
+                 <div class="conteudo-gremio">
+                <div class="titulo-gremio">
+                <i class="fas fa-book-reader"></i>
+                <h1>Sobre o Grêmio</h1>
+             </div>
+             <div class="text-gremio">
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis a non, reprehenderit velit distinctio quod mollitia doloremque sunt necessitatibus cum unde consectetur fuga rerum natus placeat, eveniet nemo ab neque itaque eum tenetur possimus, porro soluta! Molestiae deleniti porro nulla saepe labore vel deserunt facilis, soluta nesciunt sunt rem dignissimos quos veritatis officia sapiente beatae, ipsa amet, modi cum iusto.</p>
+              </div>
+             </div>
+            </div>
+    </section>
+
+    <section class="projetos" id="Projetos">
+        <div class="projetos-header">
+            <h1>Projetos dos Alunos</h1>
+        </div>
+        <div class="gallery autoplay items-3">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+          
+            <figure class="item">
+                <div class="slider-header">
+                 <img src="/imagens/item1.jpg" alt="">
+                    <div class="info-slider">
+                        <h1>O aluno Paulo Renato Produziu um Podcast</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere reiciendis, provident soluta vel, atque cum labore maxime officia quos laudantium neque tenetur qui culpa. Laborum porro voluptatem perspiciatis dolor?</p>
+                        <button class="btn btn-info">Confira</button>
+                    </div>
+                </div>
+            </figure>
+          
+            <figure class="item">
+                <div class="slider-header">
+                    <img src="/imagens/item2.jpg" alt="">
+                       <div class="info-slider">
+                           <h1>O aluno Pablo Escobar Produziu um desenho</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere reiciendis, provident soluta vel, atque cum labore maxime officia quos laudantium neque tenetur qui culpa. Laborum porro voluptatem perspiciatis dolor?</p>
+                           <button class="btn btn-info">Confira</button>
+                       </div>
+                   </div>
+            </figure>
+          
+            <figure class="item">
+                <div class="slider-header">
+                    <img src="/imagens/item3.jpg" alt="">
+                       <div class="info-slider">
+                           <h1>O aluno Jhonatan Azevedo produziu um video</h1>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere reiciendis, provident soluta vel, atque cum labore maxime officia quos laudantium neque tenetur qui culpa. Laborum porro voluptatem perspiciatis dolor?</p>
+                           <button class="btn btn-info">Confira</button>
+                       </div>
+                   </div>
+            </figure>
+          
+            <div class="controls">
+              <a href="#item-1" class="control-button">•</a>
+              <a href="#item-2" class="control-button">•</a>
+              <a href="#item-3" class="control-button">•</a>
+          </div>
+        </div>
+    </section>
+
+    <section id="Contato" class="contato">
+        <div class="container-contato">
+            <form action="" method="POST">
+                <div class="sessao-header"><h1>Contato ou Sugestão</h1></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet similique voluptate eum, id nam aperiam!</p>
+                <input type="hidden" name="accessKey" value="">
+                <div class="input-group">
+                   <input type="text" class="field" name="name" id="nome" placeholder="Informe seu nome">
+                   <label for="nome" class="field-label">Nome</label>
+               </div>
+                 <div class="input-group">
+                   <input type="text" class="field" name="email" id="email" placeholder="Informe seu email">
+                   <label for="email" class="field-label">E-mail</label>
+                 </div>
+                 <div class="input-group">
+                   <textarea class="field" name="message" id="mensagem" placeholder="Informe sua mensagem"></textarea>
+                   <label for="mensagem" class="field-label">Mensagem/Sugestão</label>
+                 </div>
+                 <button type="submit" class="btn btn-submit" value="Submit">Enviar</button>
+                <input type="hidden" name="redirectTo" value="">
+            </form>
+        </div>
+    </section>
+
+    <section id="Escola" class="escola">
+        <div class="sessao-escola">
+        <div class="projetos-header">
+            <h1>Nossa escola</h1>
+        </div>
+        <div class="img-etec">
+            <img src="/imagens/etec.jfif" alt="">
+            <div class="info-etec">
+                <h1>Etec Taboão da Serra</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto similique eum at dolores! Saepe iure consequatur amet iste, quisquam error officiis quae blanditiis aspernatur deleniti culpa cum fugiat maxime sunt dicta odit sed, quasi eos distinctio. Necessitatibus dicta officiis laudantium voluptatibus, quibusdam illo unde, saepe, adipisci ullam natus quaerat assumenda ipsum possimus aliquam tenetur sint impedit. Dicta expedita earum neque!</p>
+            </div>
+        </div>
+        <div class="projetos-header">
+            <h1>Localização</h1>
+        </div>
+        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14623.883581187225!2d-46.760471040527655!3d-23.605376728934605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5439738500e1%3A0x18e3ca266464ea67!2sEtec%20de%20Tabo%C3%A3o%20da%20Serra!5e0!3m2!1spt-BR!2sbr!4v1620471019192!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+       </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2021, Inter Chapa - Todos os diteitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                <li><a href="https://api.whatsapp.com/send?text=https://interchapa.github.io/"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/interchapa/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://interchapa.github.io/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://interchapa.github.io/"><i class="fab fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
