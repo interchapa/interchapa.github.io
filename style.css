@@ -124,7 +124,7 @@ nav a:hover{
 }
 .banner{
     position: absolute;
-    top: 35%;
+    top: 25%;
     width: 100%;
 }
 .banner h1{
@@ -137,7 +137,7 @@ nav a:hover{
     align-items: center;
     text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
     line-height: 3.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     animation: moveBanner 1s 0.5s forwards;
 }
 @keyframes moveBanner{
@@ -152,7 +152,7 @@ nav a:hover{
 .banner p{
     font-family: var(--font-secundary);
     font-weight: 200;
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: #fff;
     text-shadow: .1rem .2rem rgba(0,0,0,.4);
     margin-bottom: 2rem;
@@ -179,7 +179,7 @@ nav a:hover{
 .header-gremio{
     
     width: 100%;
-    height: 27rem;
+    height: 30rem;
     overflow: hidden;
     background-color: #f0ce66;
     display: flex;
@@ -193,11 +193,10 @@ nav a:hover{
     padding-top: 1rem;
 }
 .conteudo-gremio{
-    padding-left: 3rem;
+    padding-left: 4rem;
     width: 35%;
     text-align:justify;
     color: #4b4b4b;
-    justify-content: space-evenly;
 }
 .titulo-gremio{
     display: flex;
@@ -208,7 +207,7 @@ nav a:hover{
     margin-bottom: 1.3rem;
 }
 .titulo-gremio i{
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding-right: 0.9rem;
 }
 .text-gremio p{
@@ -217,18 +216,20 @@ nav a:hover{
     font-weight: 400;
 }
 .projetos{
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     background-color: #4b4b4b;
 }
 .sessao-header{
     background-color: #f0ce66;
 }
 .sessao-header h1{
+    text-align: center;
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #4b4b4b;
 }
 .projetos-header{
+    text-align: center;
     padding-top: 1rem;
     background-color: #4b4b4b;
     padding-bottom: 1rem;
@@ -401,7 +402,7 @@ form{
     text-shadow: .1rem .2rem rgba(0,0,0,.8);
   }
  .mapa iframe{
-     height: 25rem;
+     height: 30rem;
      width: 100%;
  }
  @keyframes zoom2{
@@ -417,7 +418,7 @@ form{
 }
 footer {
     background-color: #4b4b4b;
-    height: 5.6rem;
+    height: 5.2rem;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -458,11 +459,37 @@ footer p {
     color: #d84e28;
     transition: 3s ease;
 }
-
+.gremio{
+    background-color: #f0ce66;
+  }
+@media(max-width:1700px){
+    footer{
+        height: 5.6rem;
+    }
+    .banner{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+}
+@media(max-width:2000px){
+    footer{
+        height: 5.6rem;
+    }
+    .banner{
+        position: absolute;
+        width: 100%;
+    }
+    .gremio{
+      background-color: #f0ce66;
+    }
+    
+}
 @media(max-width:1100px){
  .banner h1 {
         color: #ffffff;
         font-size: 2.8rem;
+        top: 10%;
     }
 nav {   
         width: 100%;
@@ -589,32 +616,20 @@ a:hover, a.active {
 #check:checked ~ ul {
     left: 0;
 }
-footer p {
-    color: #a7a7a7;
-    background-color: #a09e9e;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
-    font-size: 0.9rem;
+footer{
+    padding-top: 1rem;
+    height: 4rem;
 }
-social-list li{
+.footer-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 0.7rem;
 }
-footer {
-    background-color: #4b4b4b;
-    height: 10rem;
+footer p{
+    font-size: 1rem;
+    margin-bottom: .9rem;
 }
-.footer-content i{
-   display: none;
-}
-.footer-content ul{
- display: none;
-}
-label.logo{
-    width: 100%;
-    padding-right: 0rem;
-}
-
 }
 
 
