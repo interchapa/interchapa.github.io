@@ -14,11 +14,9 @@
     <title>Inter Chapa</title>
 </head>
 <body>
-   
-<div class="loafer_bg">
-    <div class="loader"></div>
-</div>
- 
+
+    <div id="loader"></div>
+
     <nav>
 		<input type="checkbox" id="check">
 		<label for="check" class="checkbtn">
@@ -163,11 +161,31 @@
         </p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquary.min.js"></script>
-   <script>
-       setTimeout(function(){
-           $('.loader_bg').fadeToggle();
-       }, 1500)
-   </script>
+    <script type="text/javascript">
+   
+    var loader;
+    function loadNow(opacity) {
+        if(opacity <= 0){
+            displayContent();
+        }
+        else {
+            loader.style.opacity = opacity;
+            window.setTimeout(function() {
+                loadNow(opacity - 0.05)
+            }, 100);
+        }
+    }
+
+    function displayContent(){
+        loader.style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        loader = document.getElementById('loader');
+        loadNow(1);
+    });
+    </script>
+
 </body>
 </html>
