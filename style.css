@@ -462,6 +462,72 @@ footer p {
 .gremio{
     background-color: #f0ce66;
   }
+  @media(max-width:420px){
+    label.logo{
+        width: 100%;
+        margin-right: 0;
+        margin-left: 3rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    label.logo img{
+        padding-bottom: 0rem;
+        width: 70px;
+        height: 90px;
+        margin-top: -150px;
+    }
+    label.logo img{
+        padding-top: 0.3rem;
+        width: 70px;
+        height: 90px;
+    }
+    nav{
+        height: 7.5rem;
+    }
+    .checkbtn {
+        font-size: 3rem;
+        margin-top: 1rem;
+        color: #efefef;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    .banner h1 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        animation: moveBanner 1s 0.5s forwards;
+    }
+    .banner p {
+        width: 90%;
+        margin-left: 1rem;
+        justify-content: center;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        animation: moveBanner 1s 0.7s forwards;
+        opacity: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .banner{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+    }
+    .img-wrapper img {
+        width: 100%;
+        height: 56rem;
+        object-fit: cover;
+        opacity: 0.5;
+        animation: zoom 25s;
+    }
+   .container-contato p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #4b4b4b;
+ }
 @media(max-width:1700px){
     footer{
         height: 5.6rem;
@@ -594,10 +660,11 @@ form{
 ul{
     position: fixed;
     width: 70%;
+    margin-left: 10rem;
     height: 90vh;
-    background: #f0ce66;
-    margin-top: 0.2rem;
-    left: -100%;
+    background: #f1c94f;
+    margin-top: 0.1rem;
+    left: 100%;
     text-align: center;
     transition: all .5s;
 }
