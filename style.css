@@ -492,7 +492,7 @@ footer p {
     .checkbtn {
         font-size: 3rem;
         margin-top: 1rem;
-        color: #efefef;
+        color: #4b4b4b;
         float: right;
         line-height: 80px;
         margin-right: 40px;
@@ -668,6 +668,7 @@ form{
 }
 .checkbtn {
     display: block;
+    color: #4b4b4b;
 }
 ul{
     position: fixed;
