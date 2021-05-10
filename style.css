@@ -237,6 +237,67 @@ nav a:hover{
     font-size: 3rem;
     color: #4b4b4b;
 }
+
+#Noticias{
+    padding-bottom: 1rem;
+}
+#Noticias .projetos-header {
+    padding-top: 1rem;
+}
+.conteudo-noticia{
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #efefef;
+}
+.conteudo-noticia h1{
+    font-family: var(--font-primary);
+    font-size: 1.6rem;
+}
+.conteudo-noticia p{
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+.noticias{
+    background-color: #4b4b4b;
+}
+.img-noticia img{
+    justify-content: center;
+    align-items: center;
+    height: 18.5rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+.img-noticia img:hover{
+    animation: zoom3 2s ease;
+}
+@keyframes zoom3{
+    80%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+.container-noticias{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding-top: 2rem;
+    color: #4b4b4b;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
 .projetos-header{
     text-align: center;
     padding-top: 0;
@@ -278,6 +339,7 @@ nav a:hover{
     opacity: 0.3;
     object-fit: cover;
     align-items: center;
+    border-radius: 1rem;
 }
 .slider-header img:hover{
    border-radius: 2rem;
@@ -468,6 +530,7 @@ footer p {
     background-color: #f0ce66;
   }
   @media(max-width:420px){
+
     label.logo{
         width: 100%;
         margin-right: 0;
@@ -557,9 +620,9 @@ footer p {
     .gremio{
       background-color: #f0ce66;
     }
-    
 }
 @media(max-width:1100px){
+
  .banner{
         color: #ffffff;
         font-size: 2.8rem;
@@ -709,6 +772,16 @@ label.logo img{
 	width: 70px;
 	height: 90px;
 }
+.container-noticias{
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+.box3 {
+    grid-row-start: 4;
+}
+
+.box4 {
+    grid-row-start: 3;
+}   
 }
 
 
@@ -721,4 +794,16 @@ label.logo img{
 		font-size: 2rem;
         font-family: var(--font-action);
 	}
+}
+@media(min-width: 704){
+    .container-noticias{
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    }
+    .box3 {
+        grid-row-start: 3;
+    }
+    
+    .box4 {
+        grid-row-start: 4;
+    }    
 }
