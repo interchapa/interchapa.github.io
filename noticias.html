@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
+    <title>Jornal Inter</title>
+</head>
+<body>
+
+    <div id="loader"></div>
+
+    <nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo"><img src="/imagens/logo.png" alt=""></label>
+		<ul>
+            <li class="Home"><a class="text-menu" href="index.html#Home">Home</a></li>
+            <li class="Noticias"><a class="text-menu" href="noticias.html">Notícias</a></li>
+            <li class="Projetos"><a class="text-menu" href="index.html#Projetos">Projetos</a></li>
+            <li class="Escola"><a class="text-menu" href="index.html#Escola">Escola</a></li>
+            <li class="Contato"><a class="text-menu" href="index.html#Contato">Contato</a></li>
+		</ul>
+	</nav>
+
+    <section id="Noticias" class="noticias">
+    
+        <div class="projetos-header">
+            <h1>Notícias da Semana</h1>
+        </div>
+
+          <div class="all-box">
+          <div class="container-noticias">
+        <div class="box1">
+            <div class="img-noticia">
+                <img src="/imagens/item2.jpg" alt="">
+            </div>
+        </div>
+    
+        <div class="box2">
+            <div class="conteudo-noticia">
+               <h1>Pesquisas indicam que 75% dos alunos da Etec Taboão Da Serra gostaram do Sarau organizado pelo Grêmio na última Sexta feira (07/05).</h1>
+               <p>As pesquisas foram realizadas logo após o final das apresentações de cada período, e elas são majoritariamente positivas! Durante todo o Sarau, as apresentações criativas perduraram por todo o evento, desde músicas até edição de vídeos. Dentre todas as críticas negativas, as que mais surgiram foram sobre o tempo bem curto que os alunos tiveram para criar algo para apresentar no Sarau. Logo, entrevistamos o Presidente do Grêmio, Guilherme Mecenas Duarte, que rebateu: "Algumas pessoas pediram para avisarmos com mais antecedência, mas foi corrido até para a gente", afirma.</p>
+        </div>
+        </div>
+    
+        <div class="box3">
+            <div class="conteudo-noticia">
+                <h1>CPS preparou dicas para a volta às aulas nas Etecs</h1>
+                <p>A semana começou com diversas Escolas Técnicas Estaduais (Etecs) com portas abertas para dinâmicas de recepção e acolhimento aos ingressantes, para que possam conhecer as unidades onde vão estudar de forma escalonada e seguindo o Protocolo Sanitário do Centro Paula Souza (CPS). Entre os dias 3 e 5, professores reuniram-se remotamente para planejarem as atividades para esta retomada. A programação de 8 a 17 de fevereiro inclui ações presenciais exclusivas para os alunos que fizeram o processo seletivo para o primeiro semestre de 2021. Ontem (8) teve inicio o ensino remoto para os alunos de Etecs do Estado de São Paulo.</p>
+         </div>
+        </div>
+    
+        <div class="box4">
+            <div class="img-noticia">
+                <img src="/imagens/noticia2.jpg" alt="">
+            </div>
+        </div>
+    
+       </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Copyright &copy; 2021, Inter Chapa - Todos os diteitos reservados
+        </p>
+    </footer>
+
+
+    <script type="text/javascript">
+   
+        var loader;
+        function loadNow(opacity) {
+            if(opacity <= 0){
+                displayContent();
+            }
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function() {
+                    loadNow(opacity - 0.05)
+                }, 100);
+            }
+        }
+    
+        function displayContent(){
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            loader = document.getElementById('loader');
+            loadNow(1);
+        });
+        </script>
+</body>
+</html>
