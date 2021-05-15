@@ -659,6 +659,9 @@ form{
     justify-content: center;
     margin-bottom: 2rem;
 }
+.conteudo-gremio p{
+    text-align:inherit;
+}
 .titulo-gremio{
     display: inline-flexbox;
     width: 100%;
@@ -710,7 +713,7 @@ label.logo img{
     grid-template-columns: 90%;
 }
 .info-slider p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 0;
     margin-bottom: 2rem;
 }
@@ -746,7 +749,7 @@ label.logo img{
     font-size: 1.6;
 }
 .info-etec p {
-    font-size: 1.2;
+    font-size: 1.2rem;
     margin-top: 1rem; 
     margin-bottom: 1rem; 
 }
