@@ -58,7 +58,7 @@ label.logo img{
 	height: 90px;
 }
 nav ul li a {
-    color: rgb(239, 239, 239);
+    color: #4b4b4b;
     font-size: 2rem;
     border-radius: 1rem;
     align-items: center;
@@ -66,6 +66,7 @@ nav ul li a {
     padding-right: 1rem;
     justify-content: center;
     font-family: var(--font-primary);
+    transition: 1s ease;
 }
 nav ul {
 	float: right;
@@ -83,6 +84,7 @@ nav ul li a {
 	color: #efefef;
 	font-size: 2rem;
 	border-radius: 1rem;
+    font-weight: 900;
     align-items: center;
     justify-content: center;
 }
@@ -452,6 +454,38 @@ form{
    margin-top: 1rem;
    margin-bottom: 3rem;
  }
+
+
+
+
+ .social-media{
+     background-color: #4b4b4b;
+ }
+.items-social{
+    padding-top: 1rem;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.items-social i{
+color:#a7a7a7;
+justify-content: space-between;
+margin-left: 2.3rem;
+margin-right: 2.3rem;
+transition: 1s ease;
+}
+.items-social i:hover{
+    font-size: 2rem;
+    color: #d84e28;
+    transition: 1s ease;
+}
+
+
+
+
+
+
  .img-etec img{
      width: 100%;
      height: 40rem;
@@ -615,6 +649,9 @@ footer p {
     .slider-header img {
         width: 90%;  
     }
+    .items-social{
+        font-size: 1.8rem;
+        }
  .banner{
         color: #ffffff;
         font-size: 2.8rem;
