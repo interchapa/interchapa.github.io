@@ -8,7 +8,7 @@
     height: 100vh;
     z-index: 1;
     overflow: visible;
-    background: #f0ce66 url('/imagens/preloader.gif') no-repeat center center;
+    background: #efefef url('/imagens/preloader.gif') no-repeat center center;
 }
 
 *{
@@ -30,67 +30,67 @@ body{
     box-sizing: border-box;
     height: 4.4rem;
 }
+
+a{
+    color: #4b4b4b;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.7;
+}
+.logo{
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-primary);
+    background: #efefef;
+    height: 8vh;
+    position: fixed;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 0.3rem;
+    margin-left: 2rem;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #4b4b4b;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+
+
+
+
 header .primary{
     width: 100%;
     height: 16rem;
     overflow: hidden;
     position: relative;
 }
-nav {
-	background: #f0ce66;
-	height: 6rem;
-	width: 100%;
-    z-index: 90;
-    position: fixed;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
-}
-label.logo{
-    width: 100%;
-    padding-right: 14rem;
-}
-label.logo img{
-    padding-top: 0.3rem;
-	width: 70px;
-	height: 90px;
-}
-nav ul li a {
-    color: #4b4b4b;
-    font-size: 2rem;
-    border-radius: 1rem;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    justify-content: center;
-    font-family: var(--font-primary);
-    transition: 1s ease;
-}
-nav ul {
-	float: right;
-    text-align: center;
-}
-nav ul li {
-    display: inline-table;
-    font-size: 2rem;
-    padding-right: 3px;
-    padding-left: 3px;
-    margin-top: 2rem;
-    text-align: center;
-}
-nav ul li a {
-	color: #efefef;
-	font-size: 2rem;
-	border-radius: 1rem;
-    font-weight: 900;
-    align-items: center;
-    justify-content: center;
-}
-nav a:hover{
-    color: #d84e28;
-    transition: 2s ease;
-}
+
+
+
 .checkbtn {
 	font-size: 3rem;
     margin-top: .5rem;
@@ -110,12 +110,13 @@ nav a:hover{
     height: 3rem;
 }
 .btn-menu:hover{
-    color: #f0ce66;
+    color: #fff;
 }
 .parallax{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #4b4b4b;
 }
 .img-wrapper{
      background-image: url("/imagens/primary.jpg");
@@ -125,6 +126,7 @@ nav a:hover{
     background-size: cover;
     object-fit: cover;
     height: 40rem;
+    opacity: 0.3;
 }
 @keyframes zoom{
     0%{
@@ -140,7 +142,7 @@ nav a:hover{
     width: 100%;
 }
 .banner h1{
-    color: #ffffff;
+    color: #fff;
     font-size: 3.5rem;
     font-family: var(--font-primary);
     font-weight: 400;
@@ -148,7 +150,6 @@ nav a:hover{
     justify-content:center;
     align-items: center;
     text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);
-    line-height: 3.5rem;
     margin-bottom: 3rem;
     animation: moveBanner 1s 0.5s forwards;
 }
@@ -171,10 +172,8 @@ nav a:hover{
     animation: moveBanner 1s 0.7s forwards;
     opacity: 0;
     text-align: center;
-    
 }
 .btn{
-
     background: #f12711;
     background: -webkit-linear-gradient(to right, #f5af19, #f12711); 
     background: linear-gradient(to right, #f5af19, #f12711); 
@@ -189,11 +188,10 @@ nav a:hover{
     outline:0;
 }
 .header-gremio{
-    
     width: 100%;
     height: 30rem;
     overflow: hidden;
-    background-color: #f0ce66;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,7 +221,7 @@ nav a:hover{
     padding-right: 0.9rem;
 }
 .text-gremio p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: var(--font-secundary);
     font-weight: 400;
 }
@@ -232,7 +230,7 @@ nav a:hover{
     background-color: #4b4b4b;
 }
 .sessao-header{
-    background-color: #f0ce66;
+    background-color: #fff;
 }
 .sessao-header h1{
     text-align: center;
@@ -259,7 +257,7 @@ nav a:hover{
     padding-bottom: 3rem;
 }
 #Noticias .projetos-header {
-    padding-top: 7rem;
+    padding-top: 3rem;
 }
 
 .conteudo-noticia{
@@ -294,8 +292,6 @@ nav a:hover{
         transform: scale(1.1);
     }
 }
-
-
 .projetos-header{
     text-align: center;
     padding-top: 0;
@@ -320,10 +316,10 @@ nav a:hover{
     color: #4b4b4b;
     padding-top: 1.4rem;
     padding-bottom: 1.6rem;
-    background-color: #f0ce66;
+    background-color: #fff;
 }
 #Escola .projetos-header {
-    background-color: #f0ce66;
+    background-color: #fff;
 }
 .slider-header{
     display:flex;
@@ -386,7 +382,7 @@ nav a:hover{
     transition: 1s ease;
 }
 form{
-    background-color: #f0ce66;
+    background-color: #fff;
     width: 100%;
     height: 50rem;
 }
@@ -414,7 +410,7 @@ form{
     position: relative;
 }
 .field{
-    background-color: #f0ce66;
+    background-color: #fff;
     border: none;
     width: 60rem;
     font-size: 1.2rem;
@@ -453,11 +449,7 @@ form{
    margin-top: 1rem;
    margin-bottom: 3rem;
  }
-
-
-
-
- .social-media{
+.social-media{
      background-color: #4b4b4b;
  }
 .items-social{
@@ -468,11 +460,11 @@ form{
     text-align: center;
 }
 .items-social i{
-color:#a7a7a7;
-justify-content: space-between;
-margin-left: 2.3rem;
-margin-right: 2.3rem;
-transition: 1s ease;
+    color:#a7a7a7;
+    justify-content: space-between;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+    transition: 1s ease;
 }
 .items-social i:hover{
     font-size: 2rem;
@@ -565,26 +557,9 @@ footer p {
     transition: 3s ease;
 }
 .gremio{
-    background-color: #f0ce66;
+    background-color: #fff;
   }
   @media(max-width:420px){
-
-    label.logo{
-        width: 100%;
-        margin-right: 0;
-        margin-left: 3rem;
-        margin-top: 0;
-        padding-top: 0;
-    }
-    label.logo img{
-        padding-bottom: 0rem;
-        width: 70px;
-        height: 90px;
-        margin-top: -150px;
-    }
-    nav{
-        height: 7.5rem;
-    }
     .checkbtn {
         font-size: 3rem;
         margin-top: 1rem;
@@ -649,23 +624,54 @@ footer p {
         width: 100%;
     }
     .gremio{
-      background-color: #f0ce66;
+      background-color: #fff;
     }
 }
 @media(max-width:1100px){
-    .slider-header img {
+
+
+body{
+    overflow-x: hidden;
+}
+.nav-list {
+    position: absolute;
+    top: 9vh;
+    right: 0;
+    width: 60vw;
+    height: 90vh;
+    background: #efefef;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+.nav-list li {
+    color: #4b4b4b;
+    margin-left: 0;
+    font-family: var(--font-primary);
+    font-size: 2rem;     
+}
+.mobile-menu {
+    display: block;
+}
+
+
+
+
+
+
+
+.slider-header img {
         width: 90%;  
     }
-    .items-social{
+.items-social{
         font-size: 1.8rem;
         }
  .banner{
         color: #ffffff;
         font-size: 2.8rem;
         top: 35%;
-    }
-nav {   
-        width: 100%;
     }
 .field{
     width: 20rem;
@@ -677,7 +683,7 @@ nav {
     width: 90%;
 }
 form{
-    background-color: #f0ce66;
+    background-color: #fff;
     width: 100%;
     height: 60rem;
 }
@@ -688,7 +694,7 @@ form{
     width: 100%;
     height: 40rem;
     overflow: hidden;
-    background-color: #f0ce66;
+    background-color: #fff;
     display: inline-table;
     align-items: center;
     justify-content: center;
@@ -727,11 +733,6 @@ form{
     width: 100%;
     padding:0;
 }
-
-label.logo img{
-  padding-bottom: 7px;
-}
-
 .img-noticia img{
     width: 100%;
     border-radius: 1rem;
@@ -781,7 +782,6 @@ label.logo img{
 .sessao-header h1 {
     font-family: var(--font-primary);
     font-size: 3rem;
-    color: #4b4b4b;
     text-align: center;
 }
 .container-contato p {
@@ -801,53 +801,11 @@ label.logo img{
     display: block;
     color: #4b4b4b;
 }
-ul{
-    position: fixed;
-    width: 80%;
-    margin-left: 7rem;
-    height: 90vh;
-    background: #f0ce66;
-    margin-top: 0.1rem;
-    left: 100%;
-    text-align: center;
-    transition: all .5s;
-}
-nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-nav ul li a {
-    font-size: 20px;
-}
-a:hover, a.active {
-    background: none;
-    color: #f0ce66;
-}
-#check:checked ~ ul {
-    left: 0;
-}
 footer p{
     font-size: 1rem;
     padding-bottom: 2rem;
 }
-label.logo{
-    width: 100%;
-    margin-right: 16rem;
 }
-label.logo img{
-    padding-top: 0.3rem;
-	width: 70px;
-	height: 90px;
-}
-}
-@media (max-width: 952px){
-	label.logo{
-		font-size: 30px;
-		padding-right: 10px;
-	}
-	nav ul li a{
-		font-size: 2rem;
-        font-family: var(--font-action);
-	}
+.nav-list.active {
+    transform: translateX(0);
 }
